@@ -5,23 +5,23 @@
 class Yeo < Formula
   desc "Yeo! is a tiny backup utility for PostgreSQL databases."
   homepage "https://github.com/jjcfrancisco/yeo"
-  version "0.4.4"
+  version "0.4.5"
   license "Apache License 2.0"
 
   depends_on "libpq"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.4/yeo_Darwin_arm64.tar.gz"
-    sha256 "a4f3a24de84ccf21f932b8813364d366342db486d496e364800e0c471573a2b7"
+    url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.5/yeo_Darwin_arm64.tar.gz"
+    sha256 "4b951e2e3d1fcea5dcc836d60c156db3fd2bdc281abaeff003bd7f9f746a10e6"
 
     def install
       bin.install "yeo"
     end
   end
   if Hardware::CPU.intel?
-    url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.4/yeo_Darwin_x86_64.tar.gz"
-    sha256 "6116b91a27fa7d9e9ed6913b94e1bcc7375b87fceb0e32c346e5923a8ac45cf9"
+    url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.5/yeo_Darwin_x86_64.tar.gz"
+    sha256 "8325f2ebbf50eb82ef48018f269f6384abcb56e07c6aba2f03e9739793a5f18b"
 
     def install
       bin.install "yeo"
