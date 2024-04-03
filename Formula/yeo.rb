@@ -5,7 +5,7 @@
 class Yeo < Formula
   desc "Yeo! is a tiny backup utility for PostgreSQL databases."
   homepage "https://github.com/jjcfrancisco/yeo"
-  version "0.4.7"
+  version "0.4.9"
   license "Apache License 2.0"
 
   depends_on "libpq"
@@ -13,16 +13,16 @@ class Yeo < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.7/yeo_Darwin_arm64.tar.gz"
-      sha256 "d6584e2b70f346fe5e40ebd5bdfd2876629e235809905a79087f42f810b7104b"
+      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.9/yeo_Darwin_arm64.tar.gz"
+      sha256 "46a30f8f579ba31f3c01ca88413a9c2e3ebc9e005bc4575ac45eb865d78957e3"
 
       def install
         bin.install "yeo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.7/yeo_Darwin_x86_64.tar.gz"
-      sha256 "82b45ac1850e3c1c225fffb3f38c850278174b7d60c1ce8414c5ea50a34198b5"
+      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.9/yeo_Darwin_x86_64.tar.gz"
+      sha256 "7f621dd240502625d2ac7f02cd38fdbd9cc8f95755e82217216a8e4e8f56c64a"
 
       def install
         bin.install "yeo"
@@ -32,16 +32,16 @@ class Yeo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.7/yeo_Linux_arm64.tar.gz"
-      sha256 "8664e6ef318429afce5bb5fd626abe813d32e73638da54830d4b89d45eabba56"
+      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.9/yeo_Linux_arm64.tar.gz"
+      sha256 "a9c35b6861096aba7ef73ea76ce2bf40cff7be391f792f99ac6dd8237c1f9262"
 
       def install
         bin.install "yeo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.7/yeo_Linux_x86_64.tar.gz"
-      sha256 "33170e28b963da00f0e9117341871ac1ff5b2cb12584eaf4136d36d850df0940"
+      url "https://github.com/jjcfrancisco/yeo/releases/download/v0.4.9/yeo_Linux_x86_64.tar.gz"
+      sha256 "c7f193a45b8f6cbc74b8e25e2fbde939c0cd32bb71f4c684753972176817c0e1"
 
       def install
         bin.install "yeo"
